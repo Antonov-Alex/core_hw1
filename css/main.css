@@ -1,9 +1,21 @@
-body {
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Roboto';
-    
-}
+  }
+
+
 li {
     list-style-type: none;
 }
@@ -18,7 +30,7 @@ a {
 
 
 .first-section{
-    width: auto;
+    
     background-image: url(../img.modul8/Desktop.png);
     background-position: center;
     background-size: cover;
@@ -49,17 +61,18 @@ a {
 .nav-item{
     cursor: pointer;
     box-sizing: border-box;
-    
+    border: 2px solid rgba(255, 255, 255,0);
     border-radius: 20px;
     padding: 7px;
     margin-right: 10px;
     
     
 }
-.border-visual  {
+.nav-item:hover{
+    border: 2px solid rgba(255, 255, 255,1);
     
-    border: 2px solid white;
 }
+
 .nav-item a{
     font-family: 'Montserrat';
     font-size: 14px;
@@ -68,6 +81,7 @@ a {
     font-weight: 700;
     padding: 17px;
     text-align: center;
+    
 }
 .logo{
     margin-top: 115px;
@@ -115,10 +129,12 @@ a {
      width: 280px;
      height: 40px;
      margin: 0 auto;
-     border-radius: 15px;
+     border-radius: 22px;
      margin-top: 20px;
+     border: 2px solid #ff4e50; 
+     cursor: pointer;
 }
-.first-section-button a{
+.button-text{
     font-family: 'Montserrat';
     font-size: 14px;
     color: white;
@@ -127,7 +143,14 @@ a {
     letter-spacing: 1px;
     line-height: 40px;
 }
+.first-section-button:hover{
+    background-color: white;
+    border: 2px solid #ff4e50; 
+}
+.first-section-button:hover .button-text{
+    color: #ff4e50; 
 
+}
 .second-section{
     width: auto;
     background-color: #fff;
@@ -227,7 +250,7 @@ a {
     margin: 0 auto;
     margin-top: 30px;
 }
-.second-section-button a{
+.button-text-footer{
     display: block;
     color: #ff4e50;
     font-family: 'Montserrat';
@@ -237,16 +260,39 @@ a {
     line-height: 38px;
     text-align: center;
 }
-@media screen and (min-width: 768px){
-    .content{
-        margin: 0 auto;
+.second-section-button:hover{
+    background-color:#ff4e50;
+
+}
+.second-section-button:hover .button-text-footer{
+    color: white;
+}
+@media screen and (min-width: 768px) {
+     
+    .wrapper{
+        width: 660px;
+        box-sizing: border-box;
     }
+    .first-section{
+        
+        padding-bottom: 233px;
+    }
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 660px;
+    margin: 0 auto;
+    box-sizing: inherit;
+    margin-top: 40px;
+    
+} 
+     
      .wrapper{
          width: 660px;
          box-sizing: border-box;
      }
      .first-section{
-         width: auto;
+         padding-top: 40px;
          padding-bottom: 233px;
      }
  .header{
@@ -323,20 +369,22 @@ a {
 
  }
  }
- @media screen and (min-width: 1040px){
+ @media screen and (min-width: 1020px){
 
 .wrapper{
     width: 942px;
-    
+    margin-top: 40px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 .first-section{
-    width: auto;
+    padding-top: 40px;
 }
+
 .header{
     width: 942px;
     margin: 0 auto;
+    
 }
 
 
