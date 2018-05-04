@@ -1,20 +1,8 @@
-html{
-
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-  body
-  {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Roboto';
-  }
-
+}
 
 li {
     list-style-type: none;
@@ -24,69 +12,52 @@ a {
     text-decoration: none;
 }
 
-
-
-
-
-
-.first-section{
-    
+.first-section {
+    width: auto;
     background-image: url(../img.modul8/Desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 138px;
     margin: 0 auto;
-    
-}
-.wrapper{
-    width: 320px;
-    padding: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 5px;
-}
-.nav-menu{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    align-items: center;
-    margin-top: 20px;
-  }
-  .menu{
-    padding-top: 30px;
-}
-.nav-item{
-    cursor: pointer;
-    box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255,0);
-    border-radius: 20px;
-    padding: 7px;
-    margin-right: 10px;
-    
-    
-}
-.nav-item:hover{
-    border: 2px solid rgba(255, 255, 255,1);
-    
 }
 
-.nav-item a{
+.container {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.first-section .row .col {
+    color: white;
+    margin-top: 32px;
+}
+
+.first-section .row .col {
+    text-align: center;
+}
+
+.log-in {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 17px;
+    padding: 9px 13px;
+    cursor: pointer;
+    color: white;
     font-family: 'Montserrat';
     font-size: 14px;
-    color: white;
     line-height: 1;
     font-weight: 700;
-    padding: 17px;
-    text-align: center;
-    
+    text-decoration: none;
+    margin-left: 0 auto;
 }
-.logo{
-    margin-top: 115px;
+
+.log-in:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: white;
+    text-decoration: none;
 }
-.logo a{
+
+.logo {
     display: block;
     font-family: 'Montserrat';
     font-size: 20px;
@@ -95,69 +66,79 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 40px;
 }
-.first-section-name{
+
+.first-section-name {
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center; 
+    text-align: center;
     margin: 0 auto;
     margin-top: 40px;
-    
-    
 }
-.first-section-text{
+
+.row .col .first-section-text {
+    text-align: center;
+}
+
+.first-section-text {
     width: 225px;
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.8);
     line-height: 19px;
-    text-align: center; 
+    text-align: center;
     margin: 0 auto;
     margin-top: 24px;
     padding-top: 5px;
-    
+    margin-left: 25px;
 }
-.first-section-button{
-    display: block;
+
+.first-section .row .col .first-section-text {
     text-align: center;
-     background-color: #ff4e50;
-     width: 280px;
-     height: 40px;
-     margin: 0 auto;
-     border-radius: 22px;
-     margin-top: 20px;
-     border: 2px solid #ff4e50; 
-     cursor: pointer;
 }
-.button-text{
+
+.button-text {
     font-family: 'Montserrat';
     font-size: 14px;
     color: white;
-    line-height: 1;
+    line-height: 40px;
     font-weight: 700;
     letter-spacing: 1px;
-    line-height: 40px;
+    text-decoration: none;
 }
-.first-section-button:hover{
-    background-color: white;
-    border: 2px solid #ff4e50; 
-}
-.first-section-button:hover .button-text{
-    color: #ff4e50; 
 
+.first-section-button {
+    display: block;
+    text-align: center;
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 22px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-.second-section{
-    width: auto;
-    background-color: #fff;
-    padding-bottom: 57px;
-    margin: 0 auto;
+
+.first-section-button:hover {
+    background-color: white;
 }
-.second-section-name{
+
+.first-section-button:hover .button-text {
+    color: #ff4e50;
+    text-decoration: none;
+}
+
+.second-section {
+    padding-bottom: 200px;
+}
+
+.second-section-name {
     margin: 0;
     padding-top: 75px;
     font-family: 'Montserrat';
@@ -167,27 +148,28 @@ a {
     text-align: center;
     margin: 0 auto;
     width: 263px;
-    
 }
-.partner-list{
+
+.partner-item {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 220px;
     margin: 0 auto;
 }
-.img-wrapp{
+
+.img-wrapp {
     position: relative;
     width: 130px;
     height: 130px;
     margin: 0 auto;
 }
-.partner-item img{
 
+.partner-item img {
     display: block;
     margin: 0 auto;
 }
-.partner-icon{
+
+.partner-icon {
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -203,25 +185,28 @@ a {
     background-position: center;
     background-size: auto;
 }
-.first-icon{
+
+.first-icon {
     background-image: url(../img.modul8/icon1-Desktop.png);
     background-color: #ff4e50;
 }
 
-.second-icon{
+.second-icon {
     background-image: url(../img.modul8/icon3-Desktop.png);
     background-color: #ffa507;
 }
-.third-icon{
+
+.third-icon {
     background-image: url(../img.modul8/icon2-Desktop.png);
     background-color: #1cd7ad;
-
 }
-.fours-icon{
+
+.fours-icon {
     background-image: url(../img.modul8/icon4-Desktop.png);
     background-color: #4e73db;
 }
-.partner-name{
+
+.partner-name {
     margin: 0;
     font-family: 'Montserrat';
     font-size: 14px;
@@ -231,207 +216,84 @@ a {
     margin-top: 20px;
     margin: 0 auto;
 }
-.partner-text{
+
+.second-sectinon-content .row .col .first-section-button {
+    text-align: center;
+}
+
+.second-sectinon-content .row .col .second-section-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.partner-text {
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 300;
     color: rgba(102, 102, 102, 0.9);
     line-height: 14px;
-    text-align: center; 
-    
-    
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.second-section-button{
+
+.second-section-button {
     display: block;
     width: 277px;
     height: 38px;
     border: 2px solid #ff4e50;
     border-radius: 22px;
-    margin: 0 auto;
     margin-top: 30px;
 }
-.button-text-footer{
+
+.second-section-button-text {
     display: block;
     color: #ff4e50;
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: bold;
-
     line-height: 38px;
     text-align: center;
+    text-decoration: none;
 }
-.second-section-button:hover{
-    background-color:#ff4e50;
 
+.second-section-button:hover {
+    background-color: #ff4e50;
 }
-.second-section-button:hover .button-text-footer{
+
+.second-section-button:hover .second-section-button-text {
     color: white;
+    text-decoration: none;
 }
+
 @media screen and (min-width: 768px) {
-     
-    .wrapper{
-        width: 660px;
-        box-sizing: border-box;
-    }
-    .first-section{
-        
-        padding-bottom: 233px;
-    }
-.header{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 660px;
-    margin: 0 auto;
-    box-sizing: inherit;
-    margin-top: 40px;
-    
-} 
-     
-     .wrapper{
-         width: 660px;
-         box-sizing: border-box;
-     }
-     .first-section{
-         padding-top: 40px;
-         padding-bottom: 233px;
-     }
- .header{
-     display: flex;
-     flex-direction: row-reverse;
-     width: 660px;
-     margin: 0 auto;
-     box-sizing: inherit;
-     
-     
- }
- 
- .logo{
- align-self: flex-start;
- margin: 0;
- margin-left: 0;
- width: 330px;
- position: relative;
- }
- .logo a{
-     display: block;
-     position: absolute;
-     left: 0;
-     padding-top: 10px;
- }
- .menu{
-    align-self: flex-end;
-    
-    padding: 0;
-    width: 330px;
-    
-    }
- .nav-menu{
-     margin: 0;
-     margin-left: 78px;
-     padding: 0;
- }
- 
- 
- .first-section-name{
-     width: 550px;
-     margin-top: 130px;
-     font-size: 52px;
- 
- }
- .first-section-text{
-     width: 500px;
-     margin-top: 40px;
-     font-size: 24px;
- }
- .first-section-button{
-     margin-top: 40px;
- }
-
- .second-section-name{
-     width: 400px;
- }
- .partner-list{
-     display: flex; 
-          
-     flex-wrap: wrap;
-     
-     margin: 0 auto;
-     margin-top: 37px;
-     width: 592px;
- }
- .partner-item{
-     margin: 0 auto;
-     width: 236px;
-     
- }
- .partner-item:nth-child(2n){
-     margin-bottom: 46px;
-
- }
- }
- @media screen and (min-width: 1020px){
-
-.wrapper{
-    width: 942px;
-    margin-top: 40px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-.first-section{
-    padding-top: 40px;
-}
-
-.header{
-    width: 942px;
-    margin: 0 auto;
-    
-}
-
-
-.logo{
-    height: 30px;
-    align-self: flex-start;
-    margin: 0;
-    margin-left: 0;
-    width: 50%;
-    position: relative;
-    }
-    .logo a{
-        display: block;
-        position: absolute;
-        left: 0;
-        padding-top: 10px;
-    }
-    .menu{
-        align-self: flex-end;
-        padding: 0;
-        width: 50%;
-        
-        }
-        .nav-menu{
-            margin: 0;
-            margin-left: 211px;
-        }
-
-        .second-section{
-            width: auto;
-            margin: 0 auto;
-        }
-        
-        .partner-list{
-            display: flex; 
-             flex-direction: row;  
-             align-self: flex-start;
-             flex-wrap: nowrap;
-             justify-content: space-between;
-             width: 940px;
-             margin: 0;
-             margin-top: 40px;
-             
-        }
-        .partner-item{
-        width: 234px;
+    .container {
+        width: 748px;
         margin: 0 auto;
-        
-        }
+    }
+    .first-section-text {
+        width: 350px;
+    }
+    .first-section-name {
+        width: 250px;
+    }
+    .sign-up {
+        margin-left: 35px;
+    }
+    .first-section-button {
+        width: 300px;
+        margin-left: 20px;
+    }
+    .logo {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .container {
+        width: 920px;
+        margin: 0 auto;
+    }
 }
